@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHAPNO ICT Training and Service Ltd</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f2f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #005599;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background-color: #00b894;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .testimonial {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-left: 5px solid #00b894;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #005599;
+    }
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+    @media(max-width: 768px) {
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="SHAPNO ICT Logo" style="height:100px; margin-bottom:10px;">
+    <h1>SHAPNO ICT Training and Service Ltd</h1>
+    <p>Empowering Youth Through Technology</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#courses">Courses</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Build Your Digital Future</h2>
+    <p>Join Our Training Programs & Professional IT Services</p>
+  </div>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>SHAPNO ICT is a top-tier ICT training institute in Bangladesh, offering skills-based education and tech solutions to individuals and businesses.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Website Design & Development</li>
+      <li>Custom Software Solutions</li>
+      <li>Digital Marketing & SEO</li>
+      <li>Graphics Design & Branding</li>
+      <li>Domain, Hosting & IT Support</li>
+    </ul>
+  </section>
+
+  <section class="section" id="courses">
+    <h2>Training Programs</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Graphics Design</li>
+      <li>Digital Marketing & Freelancing</li>
+      <li>MS Office & Basic IT</li>
+      <li>Programming: Python, Java</li>
+    </ul>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>We’ve delivered successful digital projects for clients across Bangladesh and abroad. (Project previews coming soon.)</p>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>"Thanks to SHAPNO ICT, I now earn regularly through freelancing!"</p>
+      <strong>- Jannat, Freelance Web Designer</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Their training helped me land a job in a software firm."</p>
+      <strong>- Rahim, Junior Developer</strong>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Certificate Verification</h2>
+    <form>
+      <input type="text" placeholder="Enter Student ID or Certificate Number" required>
+      <button type="submit">Verify</button>
+    </form>
+  </section>
+
+  
+
+  <footer>
+    <p>&copy; 2025 SHAPNO ICT Training and Service Ltd. All rights reserved.</p>
+  
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Email:</strong> shapnoicttrainingandservice@gmail.com</p>
+</section>
+
+</footer>
+
+  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+  <script>
+    const topBtn = document.getElementById('topBtn');
+    window.onscroll = () => {
+      topBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
